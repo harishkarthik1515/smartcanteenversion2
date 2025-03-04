@@ -330,9 +330,9 @@ const StudentsPage: React.FC = () => {
           email: row[4] || '',
           phoneNumber: row[5] || '',
           tokens: {
-            breakfast: parseInt(row[6]) || 30,
-            lunch: parseInt(row[7]) || 30,
-            dinner: parseInt(row[8]) || 30
+            breakfast: parseInt(row[6]) || 0,
+            lunch: parseInt(row[7]) || 0,
+            dinner: parseInt(row[8]) || 0
           }
         };
       }).filter(Boolean);
